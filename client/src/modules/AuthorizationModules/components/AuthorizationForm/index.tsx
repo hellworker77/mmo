@@ -8,9 +8,19 @@ const AuthorizationForm: React.FC = () => {
   const [login, setLogin] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const { formType, setFormType } = useFormStore();
+  const { login: authLogin } = useAuthStore();
   const handleRegistrationClick = () => {
     setFormType("registration");
   };
+  const handleLoginClick = async () => {
+    try {
+      await authLogin(login, password); // Call the login function from AuthStore
+      // If login is successful, you can redirect to a protected route or do something else
+    } catch (error) {
+      console.error("An error occurred during login:", error);
+    }
+  };
+
   return (
     <div className=" relative flex h-screen w-screen items-center justify-center">
       <video
@@ -46,6 +56,7 @@ const AuthorizationForm: React.FC = () => {
             <div className="flex gap-3">
               <button
                 className="relative flex h-12 w-64 items-center justify-center overflow-hidden rounded-md bg-gray-500"
+                onClick={handleLoginClick} // Call the handleLoginClick function on click
               >
                 <img
                   src={backgroundImageButton}
