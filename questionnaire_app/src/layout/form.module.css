@@ -1,0 +1,60 @@
+.header {
+    font-size: 20px;
+    color: #838383;
+    margin-bottom: 40px;
+}
+.inputBlock {
+    display: grid;
+    grid-template-rows: 1fr 54px;
+    flex-direction: column;
+    margin-right: 20px;
+    color: #9b9b9b;
+}
+.combobox{
+    outline: none;
+    border: 2px solid #f1f2f3;
+    padding: 10px;
+    font-size: 15px;
+    background: #fbfbfb;
+    width: 530px;
+}
+.inputHeader {
+    margin-bottom: 10px;
+}
+.inputsContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+.inputsContainer input[type="checkbox"] {
+    width: 20px;
+    margin-right: 10px;
+}
+.submitContainer{
+    display: flex;
+}
+.submitContainer input[type="submit"] {
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    color: white;
+    background: #5795fd;
+    margin: 0 0 0 auto;
+}
+.maskedInputContainer {
+    position: relative;
+    width: fit-content;
+}
+
+.input {
+    height: 52px;
+    width: 150px;
+    padding: 0 0 0 15px;
+    border: 1px solid #e4e5e7;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #b7b7b7;
+}
+
