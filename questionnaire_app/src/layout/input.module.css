@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.header{
+    color: #9b9b9b;
+}
+
+.required::after{
+    content: '*';
+}
+
+.error{
+    color: #FB5454;
+}
+
+.input{
+    height: 52px;
+    width: 150px;
+    padding: 0 0 0 15px;
+    border: 1px solid #e4e5e7;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #b7b7b7;
+}
+
