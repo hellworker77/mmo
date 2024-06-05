@@ -1,0 +1,13 @@
+﻿QuestionnaireApp/Web/bin
+QuestionnaireApp/Web/obj
+QuestionnaireApp/.idea
+QuestionnaireApp/Infrastructure/bin
+QuestionnaireApp/Infrastructure/obj
+QuestionnaireApp/Domain/bin
+QuestionnaireApp/Domain/obj
+QuestionnaireApp/Persistence/bin
+QuestionnaireApp/Application/bin
+QuestionnaireApp/Application/obj
+QuestionnaireApp/Persistence/obj
+questionnaire_app/.idea
+questionnaire_app/node_modules
